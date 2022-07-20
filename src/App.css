@@ -25,14 +25,43 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #15a8d4;
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.main-header {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.main-header .balance-widget {
+  width: 100%;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+.popup-widgets {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.popup-widgets button+button {
+  margin-left: 20px;
+}
+
+.add-transaction {
+  overflow-y: auto;
 }
