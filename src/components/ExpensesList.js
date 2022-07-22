@@ -1,7 +1,6 @@
 import { React, useState, useContext, useEffect } from 'react';
 import { Table, Badge, Col, FormGroup, Input, Label, Row } from 'reactstrap';
 import { checkDataNotEmpty } from '../helpers/helpers';
-import { useLocalStorage } from '../hooks/customHooks';
 import AppContext from './AppContext';
 
 export default function ExpensesList(props) {

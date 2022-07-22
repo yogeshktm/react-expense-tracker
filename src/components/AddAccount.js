@@ -1,7 +1,6 @@
 import { Modal, ModalHeader, ModalBody, ModalFooter, FormFeedback, Button, Form, Row, Col, Input, Label, FormGroup } from 'reactstrap';
 import { useState, useContext } from "react";
 import AppContext from './AppContext';
-import { useToggle } from '../hooks/customHooks';
 import { generateUniqueRandom, generateRandomColor } from '../helpers/helpers';
 
 export default function AddAccount(props) {

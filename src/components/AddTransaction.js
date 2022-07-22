@@ -37,6 +37,7 @@ export default function AddTransaction(props) {
         toggle={props.toggleTransPopup}
         isOpen={props.transPopupState}
         direction="end"
+        fade={false}
       >
         <div className="add-transaction">
           <OffcanvasHeader toggle={props.toggleTransPopup}>

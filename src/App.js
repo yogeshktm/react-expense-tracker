@@ -32,14 +32,16 @@ function App() {
     setTotalIncome
   };
 useEffect(() => {
-    updateTotalBalance();
-
     const transactionListData = JSON.parse(localStorage.getItem('transactionList'))
         
     if (transactionListData) {
       addTransaction(transactionListData)
     }
   },[]);
+
+  useEffect(() => {
+    updateTotalBalance();
+  });
 
 useEffect(() => {
     localStorage.setItem('transactionList', JSON.stringify(transactionList))
